@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* remember to add border: 0; here */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +49,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	/* remember to delet this border */
+	border: 1px solid gray;
 }
 
 html, body {
@@ -64,3 +66,49 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+.navigation {
+	/* text-align: justify; */
+	/* text-align: center; */
+	display: inline-block;
+	width: 100%;
+	/* height: 5px; */
+	/* margin: 0 auto; */
+	/* height: 20px; */
+	/* margin-bottom: 20px; */
+	padding: 1%;
+}
+
+nav a{
+	display: inline-block;
+	color:lightslategray;
+	text-decoration:none;
+	margin: 0 4%;
+	margin-bottom: 10px;
+  }
+
+.logo {
+	display: inline-block;
+	margin: 0 5%;
+	width: 15%;
+	height: 0 auto;
+}
+
+.mainHeading {
+	display: inline-block;
+	font-size: 80px;
+	margin-left: 20%;
+	margin-top: 20%;
+}
+
+button {
+	display: inline-block;
+}
+
+.headerImage {
+	display: inline-block;
+	margin-left: 60%;
+	margin-top: 5%;
+}
+
+
